@@ -82,6 +82,7 @@ def clean_data(df):
     # separate the data frames - columns to keep for later and columns for analysis
     x_reference = x[columns_to_keep]
     x_analysis = x.drop(columns=columns_to_keep)
+    df_analysis = df.drop(columns=columns_to_keep)
 
     # create a binary mapping
     binary_mapping = {'Yes': 1, 'No': 0, 'DSL': 1, 'Fiber Optic': 0}
@@ -125,4 +126,4 @@ def clean_data(df):
     # print(continuous_columns)
 
     return x_reference, x_analysis, y, one_hot_columns, binary_columns, categorical_columns, \
-        continuous_columns, continuous_list
+        continuous_columns, continuous_list, df_analysis
