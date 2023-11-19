@@ -1,0 +1,8 @@
+Box_Plots/
+Count_Plots/
+Density_Plots/
+Heat_map/
+Violin_Plots/
+churn_prepared.csv
+churn_clean.csv
+summary_statistics.csv
